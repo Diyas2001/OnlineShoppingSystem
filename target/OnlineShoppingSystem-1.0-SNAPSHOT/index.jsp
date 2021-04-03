@@ -31,7 +31,7 @@
     ></script>
 </head>
 <body><br><br><br>
-<h1 style="font-family: 'Arial Black'; text-align: center">Hello, welcome to online store</h1>
+<h1 style="font-family: 'Arial Black'; text-align: center">Hello, welcome to online store!</h1>
 </body>
 <%@include file="Footer.jsp"%>
 </html>
