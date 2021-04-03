@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: diyastursunkali
-  Date: 15.03.2021
-  Time: 04:32
-  To change this template use File | Settings | File Templates.
---%>
 <%@include file="Header.jsp" %>
 <html>
 <head>
@@ -31,22 +24,7 @@
 <br><br>
 <body>
 <div class="container" style="width: 500px">
-<form method="post" action="/ServletLogin">
-    <!-- 2 column grid layout with text inputs for the first and last names -->
-    <div class="row mb-4">
-        <div class="col">
-            <div class="form-outline">
-                <input type="text" id="form3Example1" class="form-control" />
-                <label class="form-label" for="form3Example1" name="firstName">First name</label>
-            </div>
-        </div>
-        <div class="col">
-            <div class="form-outline">
-                <input type="text" id="form3Example2" class="form-control" />
-                <label class="form-label" for="form3Example2" name="lastName">Last name</label>
-            </div>
-        </div>
-    </div>
+<form method="post" action="ServletLogin">
 
     <!-- Email input -->
     <div class="form-outline mb-4">
@@ -60,6 +38,16 @@
         <label class="form-label" for="form3Example4" name="password">Password</label>
     </div>
 
+    <!-- Role input -->
+
+    <div class="form-outline mb-4">
+    <select class="browser-default custom-select" name="role">
+        <option selected>Open this select menu</option>
+        <option value="admin">Admin</option>
+        <option value="seller">Seller</option>
+        <option value="customer">Customer</option>
+    </select>
+    </div>
     <!-- Checkbox -->
     <div class="form-check d-flex justify-content-center mb-4">
         <input

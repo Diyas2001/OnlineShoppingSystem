@@ -1,10 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: diyastursunkali
-  Date: 15.03.2021
-  Time: 04:35
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -49,7 +43,7 @@
             <div class="navbar-nav">
                 <a class="nav-link" aria-current="page" href="index.jsp">Home</a>
                 <a class="nav-link" href="Login.jsp">login</a>
-                <a class="nav-link" href="#">Products</a>
+                <a class="nav-link" href="Registration.jsp">Registration</a>
             </div>
         </div>
     </div>
