@@ -55,8 +55,8 @@ public class UserDAO {
                 Users bean = new Users();
                 bean.setId(rs.getInt(1));
                 bean.setName(rs.getString(2));
-                bean.setPassword(rs.getString(3));
-                bean.setEmail(rs.getString(4));
+                bean.setEmail(rs.getString(3));
+                bean.setPassword(rs.getString(4));
                 bean.setRole(rs.getString(5));
                 list.add(bean);
             }
@@ -107,8 +107,8 @@ public class UserDAO {
             if (rs.next()) {
                 bean.setId(rs.getInt(1));
                 bean.setName(rs.getString(2));
-                bean.setPassword(rs.getString(3));
-                bean.setEmail(rs.getString(4));
+                bean.setEmail(rs.getString(3));
+                bean.setPassword(rs.getString(4));
                 bean.setRole(rs.getString(5));
             }
             con.close();

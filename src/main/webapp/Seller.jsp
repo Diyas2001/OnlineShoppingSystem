@@ -1,16 +1,19 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: diyastursunkali
-  Date: 15.03.2021
-  Time: 06:38
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@include file="Header.jsp" %>
 <html>
 <head>
     <title>Title</title>
 </head>
 <body>
-
+<div class="container">
+    <ul class="nav md-pills nav-justified">
+        <li class="nav-item">
+            <a class="nav-link" href="Products.jsp">Product list</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="AddProduct.jsp">Add product</a>
+        </li>
+    </ul>
+</div>
 </body>
+<%@include file="Footer.jsp"%>>
 </html>
