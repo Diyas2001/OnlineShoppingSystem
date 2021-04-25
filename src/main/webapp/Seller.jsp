@@ -1,4 +1,4 @@
-<%@include file="Header.jsp" %>
+<%@include file="Navbar.jsp" %>
 <html>
 <head>
     <title>Title</title>
@@ -15,5 +15,5 @@
     </ul>
 </div>
 </body>
-<%@include file="Footer.jsp"%>>
+<%@include file="Footer.jsp"%>
 </html>

@@ -1,5 +1,3 @@
-
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <title>Title</title>
@@ -50,8 +48,7 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <a class="nav-link" aria-current="page" href="index.jsp">Home</a>
-                <a class="nav-link" href="Login.jsp">login</a>
-                <a class="nav-link" href="Registration.jsp">Registration</a>
+                <a class="nav-link" href="Logout.jsp">Logout</a>
             </div>
         </div>
     </div>
