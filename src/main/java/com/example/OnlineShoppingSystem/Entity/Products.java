@@ -4,6 +4,7 @@ public class Products {
     int id;
     String name;
     int price;
+    int quantity;
 
     public Products() {
     }
@@ -47,5 +48,5 @@ public class Products {
         this.quantity = quantity;
     }
 
-    int quantity;
+
 }

@@ -1,7 +1,7 @@
 <%@ page import="com.example.OnlineShoppingSystem.Database.UserDAO" %>
 <%@ page import="com.example.OnlineShoppingSystem.Entity.Users" %>
 <%@ page import="java.util.List" %>
-<%@include file="Header.jsp"%>
+<%@include file="Navbar.jsp" %>
 <html>
 <head>
     <title>List Sellers</title>
@@ -43,7 +43,7 @@
         <td><input readonly name="name" value="<%= user.getName() %>"></input></td>
         <td><input readonly name="email" value="<%= user.getEmail() %>"></input></td>
         <td><input readonly name="password" value="<%= user.getPassword() %>"></input></td>
-        <td><button type="button" class="btn btn-outline-danger waves-effect">Delete</button>
+        <td><button type="submit" class="btn btn-outline-danger waves-effect">Delete</button>
         </td>
     </tr>
     </form>

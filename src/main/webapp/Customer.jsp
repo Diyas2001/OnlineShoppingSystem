@@ -1,4 +1,4 @@
-<%@include file="Header.jsp" %>
+<%@include file="Navbar.jsp" %>
 <html>
 <head>
     <title>Title</title>
@@ -7,7 +7,7 @@
 <div class="container">
     <ul class="nav md-pills nav-justified">
         <li class="nav-item">
-            <a class="nav-link" href="ListSellers.jsp">Product list</a>
+            <a class="nav-link" href="ListProducts.jsp">Product list</a>
         </li>
     </ul>
 </div>

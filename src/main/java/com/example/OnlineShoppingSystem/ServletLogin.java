@@ -7,6 +7,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
+import java.io.PrintWriter;
 
 public class ServletLogin extends HttpServlet {
     @Override
@@ -22,13 +23,22 @@ public class ServletLogin extends HttpServlet {
             if (u.getRole().equals("admin")) {
                 session.setAttribute("admin", u);
                 response.sendRedirect("Admin.jsp");
-            } else if (u.getRole().equals("seller")) {
+            }
+            else if (u.getRole().equals("seller")) {
                 session.setAttribute("seller", u);
                 response.sendRedirect("Seller.jsp");
-            } else if (u.getRole().equals("customer")) {
+            }
+            else if (u.getRole().equals("customer")) {
                 session.setAttribute("customer", u);
                 response.sendRedirect("Customer.jsp");
             }
+        }
+        else {
+            PrintWriter out = response.getWriter();
+            response.setContentType("text/html");
+            out.println("<h1>Login or password incorrect!</h1>");
+            request.getRequestDispatcher("Login.jsp").include(request, response);
+            out.close();
         }
 
     }
