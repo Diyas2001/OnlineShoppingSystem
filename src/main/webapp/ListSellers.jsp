@@ -36,6 +36,7 @@
     <tbody>
     <% for (Users user : list) {
         if  (user.getRole().equals("seller")) { %>
+
     <form action="deleteSeller.jsp" method="post">
 
     <tr>

@@ -7,8 +7,8 @@
 <jsp:setProperty property="password" name="user" value='<%=request.getParameter("password")%>'/>
 </jsp:useBean>
 <%
-    UserDAO service = new UserDAO();
-    if (service.delete(user.getId()) == 1) {
+    UserDAO service1 = new UserDAO();
+    if (service1.delete(user.getId()) == 1) {
         request.getRequestDispatcher("ListSellers.jsp").forward(request, response);
     }
 %>

@@ -41,7 +41,7 @@
 
         <!-- Password input -->
         <div class="form-outline mb-4">
-            <input type="text" id="form3Example4" class="form-control" name="quantity"/>
+            <input type="number" id="form3Example4" class="form-control" name="quantity"/>
             <label class="form-label" for="form3Example4" >Quantity</label>
         </div>
 

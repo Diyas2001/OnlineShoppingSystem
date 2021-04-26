@@ -22,20 +22,23 @@
     ProductDAO s = new ProductDAO();
     List<Products> list = s.view();
 %>
+
 <% for (Products product : list) { %>
-<div class="container">
-        <div class="card text-center" class>
-    <div class="card-header"><%= product.getId()%></div>
+<form action="deleteProduct.jsp" method="post">
+<div class="container" >
+    <div class="card text-center" class>
+    <div class="card-header"><input name="id" value="<%= product.getId()%>"></input></div>
     <div class="card-body">
-        <h5 class="card-title"><%= product.getName()%></h5>
-        <p class="card-text">Price (KZT): <%= product.getPrice()%>
+        <h5 class="card-title"><input name="name" value="<%= product.getName()%>"></input></h5>
+        <p class="card-text">Price (KZT): <input name="price" value="<%= product.getPrice()%>"></input>
         </p>
-        <p class="card-text">Quantity: <%= product.getQuantity()%>
+        <p class="card-text">Quantity: <input name="quantity" value="<%= product.getQuantity()%>"></input>
         </p>
-        <a href="#" class="btn btn-primary">By</a>
+        <button type="submit" class="btn btn-primary">Delete</button>
+    </div>
     </div>
 </div>
-</div>
+</form>
 <% } %>
 <br><br><br><br><br><br>
 </body>
