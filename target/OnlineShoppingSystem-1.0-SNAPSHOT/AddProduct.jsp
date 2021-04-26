@@ -1,5 +1,4 @@
 <%@include file="Navbar.jsp" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <title>Title</title>
@@ -15,6 +14,7 @@
         </li>
     </ul>
 </div>
+
 <div class="container" style="width: 500px">
     <form method="post" action="ServletAddProducts">
         <!-- 2 column grid layout with text inputs for the first and last names -->
@@ -35,7 +35,7 @@
 
         <!-- Email input -->
         <div class="form-outline mb-4">
-            <input type="text" id="form3Example3" class="form-control" name="price"/>
+            <input type="number" id="form3Example3" class="form-control" name="price"/>
             <label class="form-label" for="form3Example3" >Price</label>
         </div>
 
@@ -46,7 +46,7 @@
         </div>
 
         <!-- Submit button -->
-        <button type="submit" class="btn btn-primary btn-block mb-4">Add seller</button>
+        <button type="submit" class="btn btn-primary btn-block mb-4">Add product</button>
 
     </form>
 </div>

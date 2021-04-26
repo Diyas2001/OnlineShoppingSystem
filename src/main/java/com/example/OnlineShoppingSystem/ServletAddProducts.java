@@ -26,6 +26,6 @@ public class ServletAddProducts extends HttpServlet {
 
         Products products = new Products (id, name, price, quantity);
         ProductDAO.save(products);
-        response.sendRedirect("ListProducts.jsp");
+        response.sendRedirect("Products.jsp");
     }
 }
